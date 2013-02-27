@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}{{ parent() }} - About{% endblock %}
+
+{% block content %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>Contact</h2>
+			<p>You can send us a mail to inform us of news we didn't see or just to [encourager] us.</p>
+			<h3>By mail</h3>
+			<p>To send us a mail, please use this address : <script>generateEmailLink("contact");</script></p>
+			<h3>By form</h3>
+			<p>To send us a simple message, use the following form :</p>
+			<form action="contact.php" method="post">
+				<fieldset>
+					<div class="form_oneline clearfix">
+						<label class="grid_2 alpha" for="identifier">Identifier* :</label>
+						<input class="grid_2 omega" type="text" name="identifier" id="identifier"/>
+					</div>
+					<div class="form_oneline clearfix">
+						<label class="grid_2 alpha" for="mail">Mail :</label>
+						<input class="grid_2" type="text" name="mail" id="mail"/>
+						<p class="grid_4 omega nomargin"> <em>If you want a response !</em></p>
+					</div>
+					<div class="form_oneline clearfix">
+						<label for="message">Message* :</label><br/>
+						<textarea class="grid_8 alpha omega" rows="8" cols="6" name="message" id="message"></textarea>
+					</div>
+					<div class="form_oneline clearfix">
+						<label class="grid_1 alpha" for="captcha">Anti-spam*</label>
+						<div class="grid_2"><img alt="Captcha" src="images/http://jeuxamateurs.fr/includes/captcha.php"></div>
+						<input class="grid_2 omega" type="text" name="mail" id="mail"/>
+					</div>
+					<div class="center clearfix"><input type="submit" value="Send"/></div>
+				</fieldset>
+			</form>
+		</div>
+		{% include "site/nav.html" %}
+	</section>
+{% endblock %}

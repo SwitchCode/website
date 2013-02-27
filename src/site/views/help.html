@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{{ parent() }} - Help{% endblock %}
+
+{% block content %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>Help</h2>
+			<p>Are you blocked in one of our projects ? If it's right, you can read the solution or others help to unblock you. Click on the check marks to read that you want.</p>
+				<table>
+					<thead>
+						<tr>
+							<td>Category</td>
+							<td>Project</td>
+							<td>User's manual</td>
+							<td>Complete solution</td>
+							<td>Cheats code</td>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>Category</td>
+							<td>Project</td>
+							<td>User's manual</td>
+							<td>Complete solution</td>
+							<td>Cheats code</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td>Games</td>
+							<td><a href="8-bit-robot-music-party.php">8-Bit Robot Music Party</a></td>
+							<td class="cross">&cross;</td>
+							<td class="check"><a href="#">&check;</a></td>
+							<td class="check"><a href="#">&check;</a></td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+		{% include "site/nav.html" %}
+	</section>
+{% endblock %}

@@ -1,0 +1,366 @@
+body {
+	background: #F3F3F3;
+}
+
+
+/* ------------------------------------------------- Header ------------------------------------------------- */
+
+header {
+	background: url("../images/menu-background.png") #000;
+	height: 80px;
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+
+header h1 {
+	float: left;
+	margin: 0;
+	padding: 10px 0;
+}
+
+header h1 a {
+	background: url("../images/switchcode-logo.png");
+	float: left;
+	height: 63px;
+	overflow: hidden;
+	text-indent: -10000px;
+	width: 304px;
+}
+
+header nav {
+	float: right;
+	margin: 1px 0 0;
+	padding: 10px 0;
+}
+
+header li {
+	float: left;
+}
+
+header #flags{
+	display: block;
+	width: 16px;
+	padding-top: 10px;
+}
+
+header #flags a{
+	display: block;
+	text-indent: -10000px;
+	height: 11px;
+	width: 16px;
+	padding: 0;
+	margin: 5px;
+}
+
+header #flags a.fr{
+	background: url("../images/flag-fr.png");
+}
+
+header #flags a.en{
+	background: url("../images/flag-en.png");
+}
+
+header nav a {
+	color: #FFF;
+	font-size: 14px;
+	font-style: italic;
+	padding: 4px 10px;
+	margin: 0 0 0 5px;
+	float: left;
+}
+
+header nav a strong {
+	font-size: 22px;
+	font-weight: normal;
+	font-style: normal;
+	display: block;
+}
+
+/* ------------------------------------------------- Content ------------------------------------------------- */
+
+#content{
+	padding-top: 20px;
+}
+
+#left_column {
+}
+
+#right_column {
+}
+
+#content #right_column h2 {
+	background: url("../images/switchcode-what-is-it.png");
+	text-indent: -10000px;
+	width: 294px;
+	height: 36px;
+}
+
+.frame{
+	background: #fff;
+	border: 1px solid #bababa;
+	padding: 10px;
+	margin: 10px 0;
+	-moz-box-shadow: 0 0 5px #bababa;
+	-webkit-box-shadow: 0 0 5px #bababa;
+	box-shadow: 0 0 5px #bababa;
+}
+
+.frame .navigation{
+	background: #eee;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
+	margin-top: -3px;
+}
+
+.frame .navigation a{
+	color: #000;
+}
+
+.frame .navigation a:hover{
+	color: #777;
+}
+
+.frame .selected{
+	background: #bbf;
+	border: 1px solid #aaa;
+	border-left: none;
+	border-right: none;
+}
+
+.frame ul{
+	background: #fff;
+	margin: 0;
+	display: block;
+	font-style: italic;
+	text-indent: 10px;
+}
+
+.frame ul li{
+	padding: 5px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.frame ul li a{
+	color: #99f;
+}
+
+.frame ul li a:hover{
+	color: #000;
+	text-indent: 20px;
+}
+
+.form_oneline{
+	padding: 2px 0;
+}
+
+input[type="submit"], input[type="reset"]{
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	margin: 2px 0;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active
+input[type="reset"]:hover, input[type="reset"]:active{
+	border: 1px solid #777;
+	background: #ccc;
+}
+
+textarea, input[type="text"]
+{
+	border: 1px solid #ccc;
+}
+
+textarea:focus, input[type="text"]:focus
+{
+	border: 1px solid #555;
+}
+
+table {
+	margin: 0;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	border-spacing: 0; 
+}
+
+table td, table th {
+	padding: 8px 5px;
+	vertical-align: top;
+}
+
+table tr, table tr a {
+	background: #E8EDFF;
+	color: #669;
+}
+
+table tbody .important_issue{
+	background: #FFE8ED;
+	color: #966;
+}
+
+table tbody .useless_issue{
+	background: #eee;
+	color: #999;
+}
+
+table tbody tr:hover, table tbody tr:hover a{
+	background: #D0DAFD;
+}
+
+table tbody .important_issue:hover {
+	background: #FDD0DA;
+}
+
+table tbody .useless_issue:hover {
+	background: #ddd;
+}
+
+table tbody td, tdbody table th {
+	border: 2px dashed #fff;
+	border-left: 1px dashed #fff;
+	border-right: 1px dashed #fff;
+}
+
+table thead td, table tfoot td {
+	font-weight: bold;
+	border: 2px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	background: #B9C9FE;
+	color: #003399;
+}
+
+ul {
+	list-style: circle;
+	padding-left: 40px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+.popup {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#mask {
+	background: black;
+	opacity: 0.5;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+h3 {
+	border-bottom: 2px solid #000;
+}
+
+/* ------------------------------------------------- Footer ------------------------------------------------- */
+
+footer {
+	background: url('footer-background.png') #000;
+	color: #FFF;
+	padding: 30px 0;
+}
+
+footer a {
+	color: #FFF;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer li {
+	float: left;
+	width: 100%;
+}
+
+footer strong {
+	display: block;
+	font-size: 17px;
+	color: #666;
+	margin: 0 0 10px;
+}
+
+footer li strong {
+	float: left;
+	clear: both;
+	width: 100%;
+	text-decoration: underline;
+}
+
+footer li a {
+	float: left;
+	clear: both;
+	width: 100%;
+	padding-left: 5px;
+}
+
+footer li a:hover {
+	border-left: 3px solid #fff;
+	padding-left: 2px;
+}
+
+footer .donate {
+	color: #666;
+	font-size: 12px;
+}
+
+footer .donate strong {
+	padding-top: 20px;
+	color: #FFF;
+	font-size: 24px;
+	margin: 0;
+}
+
+footer .icons {
+	padding-top: 30px;
+}
+
+footer .icons a {
+	background: url("../images/footer-icons.gif") -3px 0 no-repeat;
+	float: right;
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
+	text-indent: -900px;
+	margin: 0 5px 0 0;
+}
+
+footer .icons .facebook {
+	background-position: -44px 0;
+	margin: 0;
+}
+
+footer .icons .rss {
+	background-position: -80px 0;
+}
+
+footer .icons .linkedin {
+	background-position: -124px 0;
+}
+
+footer .icons .youtube {
+	background-position: -170px 0;
+}
+
+/* ------------------------------------------------- Others ------------------------------------------------- */
+
+.fleft{float: left;}
+.fright{float: right;}
+.center{margin: auto;text-align: center;}
+.nomargin{margin-bottom: 0;}
+.cross, .check{margin: 0;padding: 0;color: red;font-size: 25px;text-align: center;}
+.check, .check a{color: #00FF00;}

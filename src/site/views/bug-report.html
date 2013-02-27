@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}{{ parent() }} - About{% endblock %}
+
+{% block content %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>Reported issues</h2>
+				<table>
+					<thead>
+						<tr>
+							<td>Category</td>
+							<td>Project</td>
+							<td>Description</td>
+							<td>Reporter</td>
+							<td>Date</td>
+							<td>Status</td>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>Category</td>
+							<td>Project</td>
+							<td>Description</td>
+							<td>Reporter</td>
+							<td>Date</td>
+							<td>Status</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr class="important_issue">
+							<td>Web</td>
+							<td>JeuxAmateurs.fr</td>
+							<td>All</td>
+							<td>Me</td>
+							<td>Long time ago</td>
+							<td>20%</td>
+						</tr>
+						<tr class="important_issue">
+							<td>Web</td>
+							<td>JeuxAmateurs.fr</td>
+							<td>All</td>
+							<td>Me</td>
+							<td>Long time ago</td>
+							<td>90%</td>
+						</tr>
+						<tr>
+							<td>Games</td>
+							<td>8-Bit Robot Music Party</td>
+							<td>Improve</td>
+							<td>Me again</td>
+							<td>Long time ago too</td>
+							<td>50%</td>
+						</tr>
+						<tr>
+							<td>Games</td>
+							<td>8-Bit Robot Music Party</td>
+							<td>Improve</td>
+							<td>Me again</td>
+							<td>Long time ago too</td>
+							<td>50%</td>
+						</tr>
+						<tr>
+							<td>Games</td>
+							<td>8-Bit Robot Music Party</td>
+							<td>Improve</td>
+							<td>Me again</td>
+							<td>Long time ago too</td>
+							<td>10%</td>
+						</tr>
+						<tr>
+							<td>Games</td>
+							<td>8-Bit Robot Music Party</td>
+							<td>Improve</td>
+							<td>Me again</td>
+							<td>Long time ago too</td>
+							<td>50%</td>
+						</tr>
+						<tr class="useless_issue">
+							<td>Web</td>
+							<td>This Website</td>
+							<td>Finish !!</td>
+							<td>Me again</td>
+							<td>Long time ago too</td>
+							<td>10%</td>
+						</tr>
+						<tr class="useless_issue">
+							<td>Web</td>
+							<td>This Website</td>
+							<td>Finish !!</td>
+							<td>Me again</td>
+							<td>Long time ago too</td>
+							<td>90%</td>
+						</tr>
+					</tbody>
+				</table>
+			<h2>Report a bug</h2>
+			<p>If you see a bug or others problems, in our projects, we didn't fixed. Please, contact us by mail or form.</p>
+			<h3>By mail</h3>
+			<p>To send us a mail, please use this address : <script>generateEmailLink("contact");</script></p>
+			<p>Thanks to write your object like that : <cite>"Bug Report - [Project's name] Problem's name"</cite> and to develop
+			the conditions of the arrival of the problem(s).</p>
+			<h3>By form</h3>
+			<p>To report a bug through a form, please use the following :</p>
+			<form action="bug-report.php" method="post">
+				<fieldset>
+					<div class="form_oneline clearfix">
+						<label class="grid_2 alpha" for="identifier">Identifier :</label>
+						<input class="grid_2" type="text" name="identifier" id="identifier"/>
+						<p class="grid_4 omega nomargin"><em>If you want to be famous !</em></p>
+					</div>
+					<div class="form_oneline clearfix">
+						<label class="grid_2 alpha" for="mail">Mail :</label>
+						<input class="grid_2" type="text" name="mail" id="mail"/>
+						<p class="grid_4 omega nomargin"><em>If you want a response !</em></p>
+					</div>
+					<div class="form_oneline clearfix">
+						<label class="grid_2 alpha" for="project">Project bugged* :</label>
+						<select class="grid_3 omega" name="project" id="project">
+							<optgroup label="Games">
+								<option value="game-1">8-Bit Robot Music Party</option>
+							</optgroup>
+							<optgroup label="Software">
+							</optgroup>
+							<optgroup label="Web">
+								<option value="web-1">This Website</option>
+								<option value="web-2">JeuxAmateurs.fr</option>
+							</optgroup>
+							<optgroup label="Others">
+							</optgroup>
+						</select>
+					</div>
+					<div class="form_oneline clearfix">
+						<label class="grid_2 alpha" for="type">Issue type* :</label>
+						<select class="grid_3 omega" name="type" id="type">
+							<option value="crash">Crash</option>
+							<option value="spellingmistake">Spelling Mistake</option>
+							<option value="leveldesign">Level Design (collision...)</option>
+							<option value="compatibility">Compatibility</option>
+							<option value="deadlink">Dead Link</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					<div class="form_oneline clearfix">
+						<label for="desc">Description* :</label><br/>
+						<textarea class="grid_8 alpha omega" rows="8" cols="6" name="desc" id="desc"></textarea>
+					</div>
+					<div class="form_oneline clearfix">
+						<label class="grid_1 alpha" for="captcha">Anti-spam*</label>
+						<div class="grid_2"><img alt="Captcha" src="images/http://jeuxamateurs.fr/includes/captcha.php"></div>
+						<input class="grid_2 omega" type="text" name="mail" id="mail"/>
+					</div>
+					<div class="center clearfix"><input type="submit" value="Report"/></div>
+				</fieldset>
+			</form>
+		</div>
+		{% include "site/nav.html" %}
+	</section>
+{% endblock %}

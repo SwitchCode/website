@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}{{ parent() }} - Technologies we use{% endblock %}
+
+{% block content %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>Technologies we use</h2>
+			<h3>Librairies &amp; Tools</h3>
+			<div class="clearfix">
+				<div class="grid_4 alpha">
+					<div class="frame">
+						<a href="http://libsdl.org"><img src="images/sdl.png" alt="Simple DirectMedia Library"/></a>
+					</div>
+				</div>
+				<div class="grid_4 omega">
+					<div class="frame">
+						<a href="http://sfml-dev.org"><img src="images/sfml.png" alt="Simple and Fast Multimedia Library"/></a>
+					</div>
+				</div>
+				<div class="grid_4 alpha">
+					<div class="frame">
+						<a href="http://mysql.fr"><img src="images/mysql.png" alt="MySQL"/></a>
+					</div>
+				</div>
+			</div>
+			<p class="grid_8 clearfix">Blabla</p>
+			<h3>Languages &amp; Codes</h3>
+			<div class="clearfix">
+				<div class="grid_4 alpha">
+					<div class="frame">
+						<a href="http://en.wikipedia.org/wiki/C++"><img src="images/languagecpp.png" alt="C++ language"/></a>
+					</div>
+				</div>
+				<div class="grid_4 omega">
+					<div class="frame">
+						<a href="http://en.wikipedia.org/wiki/C_(programming)"><img src="images/languagec.png" alt="C language"/></a>
+					</div>
+				</div>
+				<div class="grid_4 alpha">
+					<div class="frame">
+						<a href="http://www.php.net/"><img src="images/languagephp.png" alt="PHP language"/></a>
+					</div>
+				</div>
+				<div class="grid_4 omega">
+					<div class="frame">
+						<a href="http://www.w3.org/html/"><img src="images/languagehtml5.png" alt="HTML5 language"/></a>
+					</div>
+				</div>
+				<div class="grid_4 alpha">
+					<div class="frame">
+						<a href="http://www.w3.org/css/"><img src="images/languagecss3.png" alt="CSS3 language"/></a>
+					</div>
+				</div>
+			</div>
+			<p class="grid_8">Blabla</p>
+		</div>
+		{% include "site/nav.html" %}
+	</section>
+{% endblock %}

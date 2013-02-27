@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{{ parent() }} - Partners{% endblock %}
+
+{% block content %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>Partners</h2>
+			<div class="clearfix">
+				<div class="grid_2 alpha">
+					<div class="frame">
+						<a href="http://jeuxamateurs.fr"><img src="images/ja.png" alt="JeuxAmateurs.fr - desc à faire"/></a>
+					</div>
+				</div>
+			</div>
+			<h2>Become partner</h2>
+			<p class="grid_8 clearfix">Blabla</p>
+		</div>
+		{% include "site/nav.html" %}
+	</section>
+{% endblock %}

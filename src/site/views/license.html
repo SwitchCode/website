@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{{ parent() }} - License{% endblock %}
+
+{% block content %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>License</h2>
+			<h3>SwitchCode's website</h3>
+			<p>This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution 3.0 License</a>.</p>
+			<p>
+				<img src="images/cc.png" alt="CC"/>
+				<img src="images/by.png" alt="BY"/>
+				<img src="images/nc.png" alt="NC"/> <!-- mettre € pour le fr -->
+				<img src="images/sa.png" alt="SA"/>
+				<img src="images/share.png" alt="Share"/>
+				<img src="images/remix.png" alt="Remix"/>
+			</p>
+			<h3>SwitchCode's projects</h3>
+			<div class="grid_3 alpha"><img src="images/cclogo.png" alt="Creative Commons Logo"></div>
+			<p class="grid_5 omega">Generally, our projects are under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution 3.0 License CC BY-NC-SA</a>
+			but it's possible that the license change according to the different projects.</p>
+			<p>We will precise the license on the projects' fiches.</p>
+		</div>
+		{% include "site/nav.html" %}
+	</section>
+{% endblock %}

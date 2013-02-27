@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ parent() }} - Donate{% endblock %}
+
+{% block content %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>Donate</h2>
+			<h3>Contribute to our creativity</h3>
+			<p>We love Moli&egrave;re so just a little quote of Tartuffe : <cite>"Et je vais, de ce pas, en fort bonne mani&egrave;re, Vous faire de mon bien donation enti&egrave;re."</cite></p>
+			<p>If you want to help us to create faster and easier projects, you could donate us a little contribution.</p>
+			<form style="text-align: center" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_s-xclick"/>
+				<input type="hidden" name="hosted_button_id" value="64S5M6U67AN5E"/>
+				<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !"/>
+				<img alt="Donate button" src="images/https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif"/>
+			</form>
+			<div class="center"><img src="images/http://www.scenedowns.com/wp-content/uploads/2010/05/donate.jpg" alt="Donate, please !"/></div>
+		</div>
+		{% include "site/nav.html" %}
+	</section>
+{% endblock %}
