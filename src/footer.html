@@ -6,41 +6,38 @@
 					<strong>Organisation</strong>
 					<ul>
 						<li>
-							<a title="Home" href="index.php">Home</a>
+							<a title="Home" href="{{ root }}index">Home</a>
 						</li>
 						<li>
-							<a title="About us" href="about.php">About us</a>
+							<a title="About us" href="{{ root }}about">About us</a>
 						</li>
 						<li>
-							<a title="Technologies we use" href="technologies.php">Technologies we use</a>
+							<a title="Technologies we use" href="{{ root }}technologies">Technologies we use</a>
 						</li>
 						<li>
-							<a title="License" href="license.php">License</a>
+							<a title="License" href="{{ root }}license">License</a>
 						</li>
 						<li>
-							<a title="Donate" href="donate.php">Donate</a>
+							<a title="Donate" href="{{ root }}donate">Donate</a>
 						</li>
 					</ul>
 				</li>
 				<li class="grid_2">
 					<strong>Partners</strong>
-					<ul>
+					<!--<ul>
 						<li>
-							<a title="JeuxAmateurs.fr - ICI DESC" href="http://www.jeuxamateurs.fr">JeuxAmateurs</a>
+							<a title="Insert a partner here" href="#">Partner</a>
 						</li>
-						<li>
-							<a title="Scorsoft" href="#">Scorsoft owiiii</a>
-						</li>
-					</ul>
+					</ul>-->
 				</li>
 				<li class="grid_2">
 					<strong>Support</strong>
 					<ul>
 						<li>
-							<a title="Report a bug" href="bug-report.php">Report a bug</a>
+							<a title="Report a bug" href="{{ root }}bug-report">Report a bug</a>
 						</li>
 						<li>
-							<a title="Help" href="help.php">Help</a>
+							<a title="Help" href="{{ root }}help">Help</a>
 						</li>
 					</ul>
 				</li>
@@ -73,7 +70,7 @@
 					<strong>Get In Touch</strong>
 					<ul>
 						<li>
-							<a title="contact" href="contact.php">Contact us</a>
+							<a title="contact" href="{{ root }}contact">Contact us</a>
 						</li>
 						<li>
 							<script type="text/javascript">generateEmailLink('contact');</script>
@@ -84,7 +81,7 @@
 		</div>
 		<div class="clearfix">
 			<div class="grid_8 donate">
-				<strong><a href="donate.php" title="Make a donation, for more creations"><img src="images/donate.png" alt="Donate"/></a></strong>
+				<strong><a href="donate" title="Make a donation, for more creations"><img src="images/donate.png" alt="Donate"/></a></strong>
 				This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution 3.0 License</a>.
 			</div>
 			<div class="grid_4 icons">

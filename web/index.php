@@ -2,38 +2,38 @@
 
 	require_once __DIR__ . '/../vendor/autoload.php';
 	
+	define('ROOT', '/' . basename(dirname(__DIR__)) . '/web/');
+	
 	$loader = new Twig_Loader_Filesystem('../src');
 	$twig = new Twig_Environment($loader, array(
 		'debug' => 'true',
 		'cache' => '../cache',
 	));
 	
-	// TODO : Add protection with Regex
-	
-	$css_dir = '/SwitchCode/web/stylesheets/';
 	$url = "";
-	if(isset($_GET['cat']))
+	if(isset($_GET['f']))
 	{
-		$url .= $_GET['cat'];
-		if(isset($_GET['file']))
+		$tabs = explode('/', $_GET['f']);
+		$i = 0;
+		foreach($tabs as $tab)
 		{
-			$url .= '/views/' . $_GET['file'];
+			if($tab != NULL)
+			{
+				if($i == 0)
+				{
+					$url .= $tab;
+				}
+				else
+				{
+					$url .= '/views/' . $tab;
+				}
+				$i++;
+			}
 		}
-		else
+		if($i == 1)
 		{
-			$url .= '/views/' . "index";
-		}
-	}
-	else
-	{
-		$url .= "site";
-		if(isset($_GET['file']))
-		{
-			$url .= '/views/' . $_GET['file'];
-		}
-		else
-		{
-			$url .= '/views/' . "index";
+			$url2 = 'site/views/' . $url . '.html';
+			$url .= '/views/index';
 		}
 	}
 	
@@ -42,10 +42,26 @@
 	try
 	{
 		$template = $twig->loadTemplate($url);
-		echo $template->render(array('css_dir' => $css_dir));
+		echo $template->render(array('root' => ROOT));
 	}
 	catch(Twig_Error_Loader $e)
 	{
-		echo '404 <br />';
-		echo $url . ' not found';
+		if(isset($url2))
+		{
+			try
+			{
+				$template = $twig->loadTemplate($url2);
+				echo $template->render(array('root' => ROOT));
+			}
+			catch(Twig_Error_Loader $e)
+			{
+				$template = $twig->loadTemplate('404.html');
+				echo $template->render(array('root' => ROOT));
+			}
+		}
+		else
+		{
+			$template = $twig->loadTemplate('404.html');
+			echo $template->render(array('root' => ROOT));
+		}
 	}
