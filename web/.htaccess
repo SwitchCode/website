@@ -1,5 +1,8 @@
 RewriteEngine on
-RewriteRule ^$ index.php?f=index [L]
-RewriteRule ^([a-z0-9-/]+)$ index.php?f=$1 [L]
+#RewriteRule ^$ index.php?f=index [L]
+#RewriteRule ^([a-z0-9-/]+)$ index.php?f=$1 [L]
 
 ErrorDocument 404 404.html
+
+RewriteRule ^$ /SwitchCode/web/index.php?f=index [L]
+RewriteRule ^([a-z0-9-/]+)$ /SwitchCode/web/index.php?f=$1 [L]
