@@ -2,7 +2,7 @@
 
 	require_once __DIR__ . '/../vendor/autoload.php';
 	
-	define('ROOT', '/' . basename(dirname(__DIR__)) . '/web/');
+	define('ROOT', '/' . basename(dirname(__DIR__)) . '/');
 	
 	$loader = new Twig_Loader_Filesystem('../src');
 	$twig = new Twig_Environment($loader, array(

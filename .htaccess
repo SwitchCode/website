@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^$ web/index.php?f=index [L]
+RewriteRule ^([a-z0-9-/]+)$ web/index.php?f=$1 [L]
