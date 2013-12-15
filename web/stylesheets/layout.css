@@ -81,6 +81,7 @@ header nav a strong {
 
 #content{
 	padding-top: 20px;
+	min-height: 500px;
 }
 
 #left_column {
@@ -94,6 +95,17 @@ header nav a strong {
 	text-indent: -10000px;
 	width: 294px;
 	height: 36px;
+}
+
+.empty_frame {
+	border: 5px dashed #bababa;
+	padding: 10px;
+	margin: 10px 0;
+	color: #bababa;
+	font-size: 5em;
+	text-align: center;
+	height: 150px;
+	line-height: 150px;
 }
 
 .frame{
@@ -354,6 +366,20 @@ footer .icons .linkedin {
 
 footer .icons .youtube {
 	background-position: -170px 0;
+}
+
+/* Errors */
+
+.error-number {
+	font-size: 10em;
+	text-align: center;
+	font-family: "Tahoma";
+}
+
+.error-sentence {
+	font-size: 2em;
+	text-align: center;
+	color: #555;
 }
 
 /* ------------------------------------------------- Others ------------------------------------------------- */

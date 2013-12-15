@@ -2,43 +2,53 @@
 
 {% block title %}{{ parent() }} - Indie Development Team{% endblock %}
 
+{% set projects_path = 'projects/' %}
+
 {% block content %}
 	<section id="content" class="container_12 clearfix">
 		<div id="left_column" class="grid_8 clearfix">
 			<div class="frame">
-				<a href="#" title="Our last project"><img src="http://lorempixum.com/600/300/" alt="Last project"/></a>
+				<a href="{{ projects_path }}heart-of-jump" title="Our last project : Heart of Jump">
+					<img src="{{ root }}web/images/projects/heart-of-jump/logo-large.png" alt="Logo Heart of Jump"/>
+				</a>
 			</div>
 			
 			<div class="clear"></div>
 			
 			<div class="grid_4 alpha clearfix">
 				<div class="frame">
-					<a href="#" title="A project"><img src="http://lorempixum.com/280/150/nightlife" alt="A project"/></a>
+					<a href="{{ projects_path }}8-bit-robot-music-party" title="8-Bit Robot Music Party">
+						<img src="{{ root }}web/images/projects/8-bit-robot-music-party/logo-small.png" alt="Logo 8-Bit Robot Music Party"/>
+					</a>
 				</div>
 			</div>
 			<div class="grid_4 omega clearfix">
 				<div class="frame">
-					<img src="http://lorempixum.com/278/150/sports" alt="Last project"/>
+					<a href="{{ projects_path }}jeuxamateurs" title="JeuxAmateurs">
+						<img src="{{ root }}web/images/projects/jeuxamateurs/logo-small.png" alt="Logo JeuxAmateurs"/>
+					</a>
 				</div>
 			</div>
 			<div class="grid_4 alpha clearfix">
-				<div class="frame">
-					<img src="http://lorempixum.com/278/150/animals" alt="Last project"/>
+				<div class="empty_frame">
+					<p>&#128187;</p>
 				</div>
 			</div>
 			<div class="grid_4 omega clearfix">
-				<div class="frame">
-					<img src="http://lorempixum.com/278/150/" alt="Last project"/>
+				<div class="empty_frame">
+					<p>&#127918;</p>
 				</div>
 			</div>
 		</div>
 		<div id="right_column" class="grid_4 clearfix">
 			<h2>SwitchCode ? What is it ?</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in enim eget lectus fringilla rhoncus posuere ac diam. Proin malesuada, metus vel pellentesque tristique, ipsum nisl rhoncus mi, ac volutpat neque velit at lectus. Maecenas nec ante vel ligula pulvinar suscipit. Vivamus pulvinar magna ut magna porta sed imperdiet massa semper. Aliquam ac pretium nisl. Etiam mattis facilisis justo, sit amet fermentum erat consectetur ac. </p>
+			<p>Indie development team trying to do something with computers.</p>
 			<div class="frame">
 				<object width="278" height="208" data="http://dailymotion.com/swf/xile5w" type="application/x-shockwave-flash">
-				<param value="http://dailymotion.com/swf/xile5w" name="movie"><param value="transparent" name="wmode"><param value="true" name="allowFullScreen">
-				<param value="always" name="allowScriptAccess"><p>Trailer 8-Bit Robot Music Party</p></object>
+					<param value="http://dailymotion.com/swf/xile5w" name="movie"><param value="transparent" name="wmode">
+					<param value="true" name="allowFullScreen">
+					<param value="always" name="allowScriptAccess"><p>Trailer 8-Bit Robot Music Party</p>
+				</object>
 			</div>
 		</div>
 	</section>

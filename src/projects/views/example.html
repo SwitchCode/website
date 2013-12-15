@@ -1,0 +1,212 @@
+{% extends "projects/projects.html" %}
+
+{% block title %}{{ parent() }} - 8-Bit Robot Music Party{% endblock %}
+
+{% block project %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>8-Bit Robot Music Party</h2>
+			<div class="frame">
+				<img src="http://lorempixum.com/598/300/" alt="Last project"/>
+			</div>
+			<h3>About the game</h3>
+			<h4 id="intro">Introduction</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, turpis vitae iaculis laoreet, nisl orci sodales nulla, eget mollis nunc sem ut urna. Nunc risus elit, fermentum nec gravida id, molestie vel metus. Nam iaculis enim ac ligula aliquet non porta diam iaculis. Proin consectetur, dui eu aliquam commodo, ipsum lectus semper enim, quis consequat ligula sem eu augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas leo diam, pellentesque in rutrum quis, facilisis id lorem. Donec ullamcorper iaculis est quis fringilla. Etiam odio felis, sodales non laoreet quis, consequat at magna. In hac habitasse platea dictumst. Morbi consectetur risus quis risus vehicula pulvinar.</p>
+			<p>Praesent sagittis interdum nulla eget ultricies. Etiam ut turpis vitae massa dictum ultricies quis eu metus. Donec quis risus felis. Praesent luctus nunc sit amet erat ultricies vitae malesuada lacus dapibus. Nulla cursus porta nisl non malesuada. Curabitur rutrum orci tincidunt velit egestas et suscipit turpis bibendum. Donec purus ligula, dignissim sed malesuada at, sollicitudin vel elit. In sed turpis ac ipsum porttitor consequat. In sapien magna, rhoncus in porttitor at, dignissim egestas enim. Quisque sed varius sapien. Nullam tellus mauris, viverra eu imperdiet eu, euismod sit amet sapien. Sed sollicitudin eros sit amet odio eleifend rhoncus. </p>
+			<h4 id="tech">Technologies & Tools</h4>
+			<div class="grid_4 alpha">
+				<div class="frame">
+					<a href="http://en.wikipedia.org/wiki/C++"><img src="{{ root }}images/languagecpp.png" alt="C++ language"/></a>
+				</div>
+			</div>
+			<div class="grid_4 omega">
+				<div class="frame">
+					<a href="http://sfml-dev.org"><img src="{{ root }}images/sfml.png" alt="Simple and Fast Multimedia Library"/></a>
+				</div>
+			</div>
+			<p class="grid_8 alpha omega">Praesent sagittis interdum nulla eget ultricies. Etiam ut turpis vitae massa dictum ultricies quis eu metus. Donec quis risus felis. Praesent luctus nunc sit amet erat ultricies vitae malesuada lacus dapibus. Nulla cursus porta nisl non malesuada. Curabitur rutrum orci tincidunt velit egestas et suscipit turpis bibendum. Donec purus ligula, dignissim sed malesuada at, sollicitudin vel elit. In sed turpis ac ipsum porttitor consequat. In sapien magna, rhoncus in porttitor at, dignissim egestas enim. Quisque sed varius sapien. Nullam tellus mauris, viverra eu imperdiet eu, euismod sit amet sapien. Sed sollicitudin eros sit amet odio eleifend rhoncus. </p>
+			<h4 id="story">Story</h4>
+			<p>Praesent sagittis interdum nulla eget ultricies. Etiam ut turpis vitae massa dictum ultricies quis eu metus. Donec quis risus felis. Praesent luctus nunc sit amet erat ultricies vitae malesuada lacus dapibus. Nulla cursus porta nisl non malesuada. Curabitur rutrum orci tincidunt velit egestas et suscipit turpis bibendum. Donec purus ligula, dignissim sed malesuada at, sollicitudin vel elit. In sed turpis ac ipsum porttitor consequat. In sapien magna, rhoncus in porttitor at, dignissim egestas enim. Quisque sed varius sapien. Nullam tellus mauris, viverra eu imperdiet eu, euismod sit amet sapien. Sed sollicitudin eros sit amet odio eleifend rhoncus. </p>
+			<h4 id="gameplay">Gameplay</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, turpis vitae iaculis laoreet, nisl orci sodales nulla, eget mollis nunc sem ut urna. Nunc risus elit, fermentum nec gravida id, molestie vel metus. Nam iaculis enim ac ligula aliquet non porta diam iaculis. Proin consectetur, dui eu aliquam commodo, ipsum lectus semper enim, quis consequat ligula sem eu augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas leo diam, pellentesque in rutrum quis, facilisis id lorem. Donec ullamcorper iaculis est quis fringilla. Etiam odio felis, sodales non laoreet quis, consequat at magna. In hac habitasse platea dictumst. Morbi consectetur risus quis risus vehicula pulvinar.</p>
+			<h4 id="prices">Prices</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum, turpis vitae iaculis laoreet, nisl orci sodales nulla, eget mollis nunc sem ut urna. Nunc risus elit, fermentum nec gravida id, molestie vel metus. Nam iaculis enim ac ligula aliquet non porta diam iaculis. Proin consectetur, dui eu aliquam commodo, ipsum lectus semper enim, quis consequat ligula sem eu augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas leo diam, pellentesque in rutrum quis, facilisis id lorem. Donec ullamcorper iaculis est quis fringilla. Etiam odio felis, sodales non laoreet quis, consequat at magna. In hac habitasse platea dictumst. Morbi consectetur risus quis risus vehicula pulvinar.</p>
+			<h3>Medias</h3>
+			<h4 id="screens">Screenshots</h4> <!-- système pour voir en grand et diapos -->
+			<div class="grid_2 alpha">
+				<div class="frame">
+					<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 1"/></a>
+				</div>
+			</div>
+			<div class="grid_2">
+				<div class="frame">
+					<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 2"/></a>
+				</div>
+			</div>
+			<div class="grid_2">
+				<div class="frame">
+					<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 3"/></a>
+				</div>
+			</div>
+			<div class="grid_2 omega">
+				<div class="frame">
+					<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 4"/></a>
+				</div>
+			</div>
+			<div class="grid_2 alpha">
+				<div class="frame">
+					<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 5"/></a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<h4 id="wallpapers">Wallpapers</h4> <!-- système pour voir en grand et diapos -->
+			<div class="grid_4 alpha">
+				<div class="frame">
+					<a href="#"><img src="http://lorempixum.com/280/160/" alt="Wallpaper 1"/></a>
+					<p class="nomargin">4/3 : <a href="#">1024x768</a> - <a href="#">1280x1024</a> - <a href="#">2048x1536</a></p>
+					<p class="nomargin">16/9 : <a href="#">1024x768</a> - <a href="#">1280x1024</a> - <a href="#">2048x1536</a></p>
+				</div>
+			</div>
+			<div class="grid_4 omega">
+				<div class="frame">
+					<a href="#"><img src="http://lorempixum.com/280/160/" alt="Wallpaper 2"/></a>
+					<p class="nomargin">4/3 : <a href="#">1024x768</a> - <a href="#">1280x1024</a> - <a href="#">2048x1536</a></p>
+					<p class="nomargin">16/9 : <a href="#">1024x768</a> - <a href="#">1280x1024</a> - <a href="#">2048x1536</a></p>
+				</div>
+			</div>
+			<div class="grid_4 alpha">
+				<div class="frame">
+					<a href="#"><img src="http://lorempixum.com/280/160/" alt="Wallpaper 3"/></a>
+					<p class="nomargin">4/3 : <a href="#">1024x768</a> - <a href="#">1280x1024</a> - <a href="#">2048x1536</a></p>
+					<p class="nomargin">16/9 : <a href="#">1024x768</a> - <a href="#">1280x1024</a> - <a href="#">2048x1536</a></p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<h4 id="videos">Trailers &amp; Videos</h4>
+			<div class="grid_6 alpha omega push_1">
+				<div class="frame">
+					<object width="440" height="330" data="http://dailymotion.com/swf/xile5w" type="application/x-shockwave-flash">
+					<param value="http://dailymotion.com/swf/xile5w" name="movie"><param value="transparent" name="wmode"><param value="true" name="allowFullScreen">
+					<param value="always" name="allowScriptAccess"><p>Trailer 8-Bit Robot Music Party</p></object>
+				</div>
+			</div>
+			<div class="grid_6 alpha omega push_1">
+				<div class="frame">
+					<object width="440" height="330" data="http://dailymotion.com/swf/xgosov" type="application/x-shockwave-flash">
+					<param value="http://dailymotion.com/swf/xgosov" name="movie"><param value="transparent" name="wmode"><param value="true" name="allowFullScreen">
+					<param value="always" name="allowScriptAccess"><p>Prologue 8-Bit Robot Music Party</p></object>
+				</div>
+			</div>
+			<p class="grid_8 alpha omega">You can activate subtitles for the french videos.</p>
+			<div class="clearfix"></div>
+			<h4 id="musics">Musics</h3>
+			<p>A little bit of blabla !</p>
+			<div class="grid_6 alpha omega push_1">
+				<div class="frame">
+					<object type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_multi.swf" width="440" height="150">
+						<param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_multi.swf" />
+						<param name="bgcolor" value="#f3f3f3" />
+						<param name="FlashVars" value="mp3=http%3A//chiptunes-headbangers.net/song/listen/14840%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/14524%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/12878%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/47%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/8731%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/93%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/50%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/48%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/14522%20%7C%20http%3A//chiptunes-headbangers.net/song/listen/11
+						&title=[Principal menu] The Moon's filesystem - Spintronic | [Introduction] We are humans - Spintronic | [Level 1] Legendary Sushi - Spintronic | [Level 2] Sad cartoon - Spintronic | [Level 3] Yellow brain - Spintronic | [Level 4] Song for a dead child - Spintronic | [Level 5] Old memories - Spintronic | [Level 6] Patchwork - Spintronic | [Boss] We are robots - Spintronic | [Conclusion] No way to leave - Spintronic | &amp;width=440&amp;height=150&amp;showvolume=1&amp;sliderwidth=10&amp;sliderheight=8&amp;loadingcolor=008fff&amp;bgcolor=ffffff&amp;bgcolor1=222222&amp;bgcolor2=222222&amp;slidercolor1=444444&amp;sliderovercolor=008fff&amp;buttonovercolor=008fff&amp;currentmp3color=008fff&amp;scrollbarcolor=008fff&amp;scrollbarovercolor=ffffff&amp;showplaylistnumbers=0" />
+					</object>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<h3>Download</h3>
+			<h4 id="installer">Installer</h4>
+			<h5>Last release</h5>
+			<a href="#" title="Download the game for Windows"><img src="{{ root }}images/windows.png" alt="Windows"/></a></td>
+			<a href="#" title="Download the game for Mac OS"><img src="{{ root }}images/macos.png" alt="Mac OS"/></a></td>
+			<a href="#" title="Download the game for Linux"><img src="{{ root }}images/linux.png" alt="Linux"/></a></td>
+			<p>8-Bit Robot Music Party Innov'Game Version - 18/04/2011</p>
+			<h5>Old releases</h5>
+			<table>
+				<thead>
+					<tr>
+						<td>Name</td>
+						<td>Support</td>
+						<td>Date</td>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td>Name</td>
+						<td>Support</td>
+						<td>Date</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>8-Bit Robot Music Party Innov'Game Version</td>
+						<td>Windows XP / Vista / Seven</td>
+						<td>18/04/2011</td>
+					</tr>
+					<tr>
+						<td>8-Bit Robot Music Party Innov'Game Version</td>
+						<td>Linux</td>
+						<td>18/04/2011</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Put here blabla.</p>
+			<h4 id="sources">Sources</h4>
+			<p>Put here blabla.</p>
+			<h4 id="ost">Original SoundTrack</h4>
+			<p>Put here links to different musics &amp; maybe an complete OST in the futur :D.</p>
+			<h3 id="license">License</h3>
+			<p>
+				<img src="images/cc.png" alt="CC"/>
+				<img src="images/by.png" alt="BY"/>
+				<img src="images/nc.png" alt="NC"/> <!-- mettre € pour le fr -->
+				<img src="images/sa.png" alt="SA"/>
+				<img src="images/share.png" alt="Share"/>
+				<img src="images/remix.png" alt="Remix"/>
+			</p>
+			<h3>Others</h3>
+			<h4 id="thanks">Special thanks</h4>
+			<ul>
+				<li><strong>Spintronic</strong>, for musics</li>
+				<li><strong>outadoc, hairaz</strong>, for their articles</li>
+				<li><strong>Innov'Game</strong>, for the prices</li>
+				<li><strong>Twittos</strong>, for [encouragements]</li>
+			</ul>
+			<h4 id="stats">Stats</h4>
+			<p>In the code :</p>
+			<ul>
+				<li><strong>10</strong> classes</li>
+				<li><strong>3000</strong> lines</li>
+			</ul>
+		</div>
+		<div id="right_column" class="grid_3 push_1 clearfix">
+			<nav class="frame">
+				<div id="nav_1" class="navigation"><a href="#" onclick="OpenSubMenu('nav_1', 'sub_1');">About the game</a></div>
+				<ul id="sub_1">
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#tech">Technologies & Tools</a></li>
+					<li><a href="#story">Story</a></li>
+					<li><a href="#gameplay">Gameplay</a></li>
+					<li><a href="#prices">Prices</a></li>
+				</ul>
+				<div id="nav_2" class="navigation"><a href="#" onclick="OpenSubMenu('nav_2', 'sub_2');">Medias</a></div>
+				<ul id="sub_2">
+					<li><a href="#screens">Screenshots</a></li>
+					<li><a href="#wallpapers">Wallpapers</a></li>
+					<li><a href="#videos">Trailers &amp; Videos</a></li>
+					<li><a href="#musics">Musics</a></li>
+				</ul>
+				<div id="nav_3" class="navigation"><a href="#" onclick="OpenSubMenu('nav_3', 'sub_3');">Download</a></div>
+				<ul id="sub_3">
+					<li><a href="#installer">Installer</a></li>
+					<li><a href="#sources">Sources</a></li>
+					<li><a href="#ost">OST</a></li>
+				</ul>
+				<div class="navigation"><a href="#license">License</a></div>
+				<div id="nav_4" class="navigation"><a href="#" onclick="OpenSubMenu('nav_4', 'sub_4');">Other</a></div>
+				<ul id="sub_4">
+					<li><a href="#thanks">Special thanks</a></li>
+					<li><a href="#stats">Stats</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+{% endblock %}

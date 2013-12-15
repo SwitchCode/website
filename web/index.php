@@ -6,7 +6,8 @@
 	
 	$loader = new Twig_Loader_Filesystem('../src');
 	$twig = new Twig_Environment($loader, array(
-		'cache' => false,//'../cache', // replace that if you want to have a cache
+		//'cache' => false, // replace that if you do not want to have a cache
+		'../cache',
 	));
 	
 	$url = "";

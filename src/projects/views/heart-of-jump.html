@@ -1,0 +1,170 @@
+{% extends "projects/projects.html" %}
+
+{% block title %}{{ parent() }} - Heart of Jump{% endblock %}
+
+{% block project %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>Heart of Jump</h2>
+			<div class="frame">
+				<img src="{{ root }}web/images/projects/heart-of-jump/logo-large.png" alt="Last project"/>
+			</div>
+			<h3>About the game</h3>
+				<h4 id="intro">Introduction</h4>
+					<p>
+						Heart of Jump a été développé en 48h lors de la Global Game Jam 2013 de Rennes au Jardin Moderne. Il s'agit d'un jeu de rythme mélangé à
+						un runner game.
+					</p>
+				
+				<h4 id="tech">Technologies &amp; Tools</h4>
+					<div class="grid_4 alpha">
+						<div class="frame">
+							<a href="http://en.wikipedia.org/wiki/C++"><img src="{{ root }}web/images/languagecpp.png" alt="C++ language"/></a>
+						</div>
+					</div>
+					<div class="grid_4 omega">
+						<div class="frame" style="height: 180px; line-height: 170px;">
+							<a href="http://sfml-dev.org"><img src="{{ root }}web/images/sfml-2.png" alt="Simple and Fast Multimedia Library"/></a>
+						</div>
+					</div>
+					<p class="grid_8 alpha omega">
+						&Eacute;tant tout deux initié au C++, nous avons choisi d'utiliser ce langage pour coder le jeu. Pour la même raison, nous avons
+						choisi SFML comme bibliothèque graphique.
+					</p>
+				
+				<h4 id="story">Story</h4>
+					<p>
+						Nous avions d'abord l'intention de travailler séparément mais les circonstances nous ont poussés à travailler, une fois de plus,
+						ensemble. Nous projetions de réaliser une sorte de Twister sur clavier mais l'idée s'est vite révélée difficile à réaliser
+						techniquement. Alors, à une heure avancée de la nuit, nous avons planché sur un concept plus simple mêlant runner game et jeu de
+						rythme. L'idée a séduit Rémy alias Capitaine Frites qui nous a rejoint en tant que graphiste. Nous avons passé la fin de la nuit à
+						coder le moteur du jeu. Le lendemain après-midi, nous avions un prototype presque jouable mais pour l'instant, sans graphisme. Rémy
+						avait, de son côté, finit son modèle 3D et s'occupait de dessiner des éléments du décor. Le jeu a été fini juste à temps même si
+						quelques bugs subsistent.
+					</p>
+				<h4 id="gameplay">Gameplay</h4>
+					<p>
+						Le personnage court automatiquement, c'est le principe de base du "runner game". Vous devez éviter divers obstacles en sautant par-dessus.
+						Sur le même écran, vous voyez la pulsation cardiaque du jogger, qu'il faut suivre en appuyant régulièrement sur la touche Entrée. Un
+						saut entraîne une hausse de la fréquence cardiaque. 3 erreurs sont autorisées à moins de réaliser un combo.
+					</p>
+			
+			<h3>Medias</h3>
+				<h4 id="screens">Screenshots</h4> <!-- système pour voir en grand et diapos -->
+					<div class="grid_2 alpha">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 1"/></a>
+						</div>
+					</div>
+					<div class="grid_2">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 2"/></a>
+						</div>
+					</div>
+					<div class="grid_2">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 3"/></a>
+						</div>
+					</div>
+					<div class="grid_2 omega">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 4"/></a>
+						</div>
+					</div>
+					<div class="grid_2 alpha">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 5"/></a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+			
+			<h3>Download</h3>
+				<h4 id="installer">Installer</h4>
+				<h5>Last release</h5>
+				<a href="#" title="Download the game for Windows"><img src="{{ root }}images/windows.png" alt="Windows"/></a></td>
+				<a href="#" title="Download the game for Mac OS"><img src="{{ root }}images/macos.png" alt="Mac OS"/></a></td>
+				<a href="#" title="Download the game for Linux"><img src="{{ root }}images/linux.png" alt="Linux"/></a></td>
+				<p>8-Bit Robot Music Party Innov'Game Version - 18/04/2011</p>
+				<h5>Old releases</h5>
+				<table>
+					<thead>
+						<tr>
+							<td>Name</td>
+							<td>Support</td>
+							<td>Date</td>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>Name</td>
+							<td>Support</td>
+							<td>Date</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td>8-Bit Robot Music Party Innov'Game Version</td>
+							<td>Windows XP / Vista / Seven</td>
+							<td>18/04/2011</td>
+						</tr>
+						<tr>
+							<td>8-Bit Robot Music Party Innov'Game Version</td>
+							<td>Linux</td>
+							<td>18/04/2011</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Put here blabla.</p>
+				
+				<h4 id="sources">Sources</h4>
+					<p>Put here blabla.</p>
+			
+			<h3 id="license">License</h3>
+				<p>
+					<img src="{{ root }}web/images/cc.png" alt="CC"/>
+					<img src="{{ root }}web/images/by.png" alt="BY"/>
+					<img src="{{ root }}web/images/nc.png" alt="NC"/> <!-- mettre � pour le fr -->
+					<img src="{{ root }}web/images/share.png" alt="Share"/>
+					<img src="{{ root }}web/images/remix.png" alt="Remix"/>
+				</p>
+			<h3>Others</h3>
+			
+				<h4 id="thanks">Special thanks</h4>
+				<ul>
+					<li><strong>Rémy Le Scornet</strong> a.k.a. Capitaine Frites, for helping us</li>
+				</ul>
+				<h4 id="stats">Stats</h4>
+				<p>In the code :</p>
+				<ul>
+					<li><strong>?</strong> classes</li>
+					<li><strong>?</strong> lines</li>
+				</ul>
+		</div>
+		<div id="right_column" class="grid_3 push_1 clearfix">
+			<nav class="frame">
+				<div id="nav_1" class="navigation"><a href="#" onclick="OpenSubMenu('nav_1', 'sub_1');">About the game</a></div>
+				<ul id="sub_1">
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#tech">Technologies & Tools</a></li>
+					<li><a href="#story">Story</a></li>
+					<li><a href="#gameplay">Gameplay</a></li>
+				</ul>
+				<div id="nav_2" class="navigation"><a href="#" onclick="OpenSubMenu('nav_2', 'sub_2');">Medias</a></div>
+				<ul id="sub_2">
+					<li><a href="#screens">Screenshots</a></li>
+				</ul>
+				<div id="nav_3" class="navigation"><a href="#" onclick="OpenSubMenu('nav_3', 'sub_3');">Download</a></div>
+				<ul id="sub_3">
+					<li><a href="#installer">Installer</a></li>
+					<li><a href="#sources">Sources</a></li>
+				</ul>
+				<div class="navigation"><a href="#license">License</a></div>
+				<div id="nav_4" class="navigation"><a href="#" onclick="OpenSubMenu('nav_4', 'sub_4');">Other</a></div>
+				<ul id="sub_4">
+					<li><a href="#thanks">Special thanks</a></li>
+					<li><a href="#stats">Stats</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+{% endblock %}
