@@ -1,0 +1,131 @@
+{% extends "projects/projects.html" %}
+
+{% block title %}{{ parent() }} - JeuxAmateurs{% endblock %}
+
+{% block project %}
+	<section id="content" class="container_12 clearfix">
+		<div id="left_column" class="grid_8 clearfix">
+			<h2>JeuxAmateurs</h2>
+			<div class="frame">
+				<img src="{{ root }}web/images/projects/jeuxamateurs/logo-large.png" alt="Logo JeuxAmateurs"/>
+			</div>
+			
+			<h3>À propos du site</h3>
+            <h4 id="intro">Introduction</h4>
+            
+            <p>JeuxAmateurs est un site d'actualité, de tests et de vidéos sur les jeux vidéo amateurs. Actuellement le site n'est plus disponible mais on espère revenir bientôt.</p>
+
+            <h4 id="tech">Technologies & Tools</h4>
+
+            <p>
+                JeuxAmateurs a beaucoup évolué technologiquement, au fur et à mesure de l’apprentissage en autodidacte de l’équipe. D’abord en pur xHTML / CSS (avec le doctype à rallonge de l’époque), PHP est venu par la suite rendre le site dynamique. Jusqu’à la dernière version en ligne, le site n’utilisait aucun framework (comprendre outil préfabriqué aidant le développement) et ne suivait même pas le modèle d’architecture bien connu MVC (là-dessus, on vous laisse checker wikipédia).
+                <br/>Une refonte du site est prévue, utilisant le framework Symfony afin de construire une API REST côté serveur ouverte à tous et Backbone.js / Marionette.js pour le côté client.
+            </p>
+
+            <h4 id="histoire">Histoire</h4>
+
+            <p>
+                L’histoire JeuxAmateurs.fr commença avec la réalisation d’un site de présentation des projets de SwitchCode. En y appliquant les premières compétences en informatique qu’ils avaient pu acquérir, les deux compères de l’équipe firent un site plutôt simple contenant quelques modules basiques, les news et le sondage. Puis le site évolua avec l’idée de représenter tous les jeux amateurs trouvés sur le net afin de faire une base commune de ce qui existait déjà éparpillés ailleurs. Ainsi la V2 sortie avec un design différent et un premier système d’authentification. Les tests, aperçus et commentaires rejoignirent les modules présents. Plus tard, avec un design repensé mais gardant les couleurs propres à l’image du site, on vit le lancement des vidéos et des AJVA (Actualités des Jeux Vidéo Amateurs) et l’achat du nom de domaine jeuxamateurs.fr le 11 novembre 2010.
+            </p>
+
+            <p>Par la suite, le 4 septembre 2014, c’est jeuxamateurs.com qui est acheté pour y placer un site temporaire contenant quelques articles sur les jeux vidéo amateurs le temps de relancer le site.</p>
+					
+            {#<h3>Medias</h3>
+				<h4 id="screens">Screenshots</h4> <!-- système pour voir en grand et diapos -->
+					<div class="grid_2 alpha">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 1"/></a>
+						</div>
+					</div>
+					<div class="grid_2">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 2"/></a>
+						</div>
+					</div>
+					<div class="grid_2">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 3"/></a>
+						</div>
+					</div>
+					<div class="grid_2 omega">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 4"/></a>
+						</div>
+					</div>
+					<div class="grid_2 alpha">
+						<div class="frame">
+							<a href="#screen" onclick="Display('http://lorempixum.com/800/600/');"><img src="http://lorempixum.com/120/80/" alt="Screenshot's game 5"/></a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				
+				<h4 id="videos">Trailers &amp; Videos</h4>
+					<div class="grid_6 alpha omega push_1">
+						<div class="frame">
+							<object width="440" height="330" data="http://dailymotion.com/swf/xile5w" type="application/x-shockwave-flash">
+							<param value="http://dailymotion.com/swf/xile5w" name="movie"><param value="transparent" name="wmode"><param value="true" name="allowFullScreen">
+							<param value="always" name="allowScriptAccess"><p>Trailer 8-Bit Robot Music Party</p></object>
+						</div>
+					</div>
+					<div class="grid_6 alpha omega push_1">
+						<div class="frame">
+							<object width="440" height="330" data="http://dailymotion.com/swf/xgosov" type="application/x-shockwave-flash">
+							<param value="http://dailymotion.com/swf/xgosov" name="movie"><param value="transparent" name="wmode"><param value="true" name="allowFullScreen">
+							<param value="always" name="allowScriptAccess"><p>Prologue 8-Bit Robot Music Party</p></object>
+						</div>
+					</div>
+					<p class="grid_8 alpha omega">You can activate subtitles for the french videos.</p>
+					<div class="clearfix"></div>#}
+				
+			<h3 id="liens">Liens</h3>
+			<ul>
+                <li><a href="http://jeuxamateurs.fr">JeuxAmateurs.fr</a> : Page de présentation en attendant le retour du site</li>
+                <li><a href="http://jeuxamateurs.fr">JeuxAmateurs.com</a> : Blog recensant quelques jeux amateurs trouvés en attendant le retour de jeuxamateurs.fr</li>
+            </ul>
+            
+			<h3 id="license">License</h3>
+			<p>
+				<img src="images/cc.png" alt="CC"/>
+				<img src="images/by.png" alt="BY"/>
+				<img src="images/nc.png" alt="NC"/> <!-- mettre  pour le fr -->
+				<img src="images/sa.png" alt="SA"/>
+				<img src="images/share.png" alt="Share"/>
+				<img src="images/remix.png" alt="Remix"/>
+			</p>
+            
+            {#<h3>Others</h3>
+			<h4 id="thanks">Special thanks</h4>
+			<ul>
+				<li><strong>Spintronic</strong>, for musics</li>
+				<li><strong>outadoc, hairaz</strong>, for their articles</li>
+				<li><strong>Innov'Game</strong>, for the prices</li>
+				<li><strong>Twittos</strong>, for [encouragements]</li>
+			</ul>
+			<h4 id="stats">Stats</h4>
+			<p>In the code :</p>
+			<ul>
+				<li><strong>10</strong> classes</li>
+				<li><strong>3000</strong> lines</li>
+			</ul>#}
+		</div>
+		<div id="right_column" class="grid_3 push_1 clearfix">
+			<nav class="frame">
+				<div id="nav_1" class="navigation"><a href="#" onclick="OpenSubMenu('nav_1', 'sub_1');">About the game</a></div>
+				<ul id="sub_1">
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#tech">Technologies &amp; Outils</a></li>
+					<li><a href="#histoire">Histoire</a></li>
+				</ul>
+                {#<div id="nav_2" class="navigation"><a href="#" onclick="OpenSubMenu('nav_2', 'sub_2');">Medias</a></div>
+				<ul id="sub_2">
+					<li><a href="#screens">Screenshots</a></li>
+					<li><a href="#wallpapers">Wallpapers</a></li>
+					<li><a href="#videos">Trailers &amp; Videos</a></li>
+					<li><a href="#musics">Musics</a></li>
+				</ul>#}
+				<div class="navigation"><a href="#liens">Liens</a></div>
+				<div class="navigation"><a href="#license">License</a></div>
+			</nav>
+		</div>
+	</section>
+{% endblock %}
