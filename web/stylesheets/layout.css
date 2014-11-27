@@ -6,7 +6,7 @@ body {
 /* ------------------------------------------------- Header ------------------------------------------------- */
 
 header {
-	background: url("../images/menu-background.png") #000;
+	background: #222;
 	height: 80px;
 	-moz-box-shadow: 0 0 5px #000;
 	-webkit-box-shadow: 0 0 5px #000;
